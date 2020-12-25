@@ -1,0 +1,64 @@
+<style>
+
+    body{
+        background-color: rgb(233, 136, 57);
+    }
+
+    p.input{
+        background-color: rgb(14, 84, 97);
+        font-family: comic Sans MS;
+        color: #f2f2f2;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
+        width: 500px;
+        border-radius: 100px;
+        padding: 7px;
+    }
+
+    .TopMenu {
+        background-color: rgb(14, 84, 97);
+        width: 500px;
+        border-radius: 100px;
+        overflow: hidden;
+    }
+
+    .TopMenu a {
+        float: left;
+        color: #f2f2f2;
+        text-align: center;
+        padding: 14px 70.45px;
+        text-decoration: none;
+        font-size: 17px;
+        font-family: comic Sans MS;
+    }
+
+
+    .TopMenu a:hover {
+        background-color: #ddd;
+        color: black;
+    }
+
+
+    .TopMenu a.Current{
+        background-color: rgb(255, 255, 255);
+        color: black;
+    }
+
+</style>
+
+<form action = "/contacts/add" method = "post">
+    <center>
+
+        <div class="TopMenu">
+            <a href="/contacts/add">Add a Contact</a>
+            <a class="list" href="/contacts/list">Contacts List</a>
+        </div>
+
+        <p class="input">
+            <label style="padding-right: 30px;">Name:</label><input value="" name="Name" style="width: 150px;"></br>
+            <label style="padding-right: 26px;">E-mail:</label><input value="" name="Email" style="width: 150px;"></br>
+            <label style="padding-right: 11px;">Phone #:</label><input value="" name="Phone" style="width: 150px;"></br>
+            <button type="submit" style="border-radius: 10px;">Add Contact</button>
+        </p>
+        
+    </center>
+</form>
